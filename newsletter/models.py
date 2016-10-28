@@ -708,7 +708,7 @@ class Submission(models.Model):
     )
 
     prepared = models.BooleanField(
-        default=False, verbose_name=_('prepared'),
+        default=True, verbose_name=_('prepared'),
         db_index=True, editable=False
     )
     sent = models.BooleanField(
